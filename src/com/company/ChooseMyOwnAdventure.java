@@ -37,19 +37,22 @@ public class ChooseMyOwnAdventure {
 
                 } else if (decision.equalsIgnoreCase("yes")) {
                     System.out.println("\n" +
-                            "You open the closet... And you find a furry, white rabbit. You wonder what to do with it.\n" +
-                            "You notice that the rabbit seems desperate for food. Would you \"feed\" the rabbit? (yes/no)");
-                    System.out.print("> "); decision = keyboard.nextLine();
-                    if (decision.equalsIgnoreCase("no")) {
-                        System.out.println("\nThe rabbit gets angry and jumps at you in attack mode. You get injured in the fall.\n" +
-                                "Because of this tragedy, you will not continue in the adventure. Come back to play soon!");
-
-                    } else if (decision.equalsIgnoreCase("yes")) {
-                        System.out.println("\n The rabbit gets well and leaves the ");
-                    }
+                            "You open the closet... And you find a furry, innocent rabbit. Nothing to worry about");
                 }
             } else if (decision.equalsIgnoreCase("bathroom")) {
+                System.out.println("\nIt is difficult to get in but you put effort strength to open the door.\n" +
+                        "When you were finally inside the bathroom, the door closed and you got locked in.\n" +
+                        "You find ways to get out of the bathroom");
+                System.out.print("> "); decision = keyboard.nextLine();
+                if (decision.equalsIgnoreCase("saw")) {
+                    System.out.println("\nThe saw turns out to be made out of plastic..." +
+                            "As a result, it broke as you were putting pressure on it.\n" +
+                            "Because you're trapped, you will not continue in the adventure.\n" +
+                            "Come back to play next time!");
 
+                } else if (decision.equalsIgnoreCase("nail polish remover")) {
+                    System.out.println("\n You successfully leave the bathroom and continue onto the adventure!");
+                }
             }
 
         } else if (decision.equalsIgnoreCase("kitchen")) {
@@ -81,7 +84,7 @@ public class ChooseMyOwnAdventure {
 
                 if (decision.equalsIgnoreCase("medicine one")) {
                     System.out.println("\n This pill turned out to be a painkiller. " +
-                            "You don't suffer as much but you unfortunately die. :(");
+                            "You don't suffer as much but you will unfortunately die. :(");
                 } else if (decision.equalsIgnoreCase("medicine two")) {
                     System.out.println("\n You survived with this pill. Great choice!");
                 }
