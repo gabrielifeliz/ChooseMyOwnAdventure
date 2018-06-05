@@ -36,10 +36,18 @@ public class ChooseMyOwnAdventure {
                             "I'm tired of making nested if statements.");
 
                 } else if (decision.equalsIgnoreCase("yes")) {
+                    System.out.println("\n" +
+                            "You open the closet... And you find a furry, white rabbit. You wonder what to do with it.\n" +
+                            "You notice that the rabbit seems desperate for food. Would you \"feed\" the rabbit? (yes/no)");
+                    System.out.print("> "); decision = keyboard.nextLine();
+                    if (decision.equalsIgnoreCase("no")) {
+                        System.out.println("\nThe rabbit gets angry and jumps at you in attack mode. You get injured in the fall.\n" +
+                                "Because of this tragedy, you will not continue in the adventure. Come back to play soon!");
 
+                    } else if (decision.equalsIgnoreCase("yes")) {
+                        System.out.println("\n The rabbit gets well and leaves the ");
+                    }
                 }
-
-
             } else if (decision.equalsIgnoreCase("bathroom")) {
 
             }
@@ -61,11 +69,22 @@ public class ChooseMyOwnAdventure {
                     System.out.println("\nYou die of starvation... eventually.");
 
                 } else if (decision.equalsIgnoreCase("yes")) {
-                    System.out.println("\nYou die of starvation... eventually.");
+                    System.out.println("\nCongrats. You don't starve. \nYour stomach hurts but you can still continue the quest.");
                 }
 
             } else if (decision.equalsIgnoreCase("cabinet")) {
+                System.out.println("You looked in a cabinet... And a serpent bites your right hand and leaves the cabinet.\n" +
+                "The venom spreads through your body. Luckily, there are two medicines inside the same cabinet.\n" +
+                        "The problem is that they are not labeled. So you must take a crucial decision.\n" +
+                        "Would you take \"medicine one\" or \"medicine two\"?");
+                System.out.print("> "); decision = keyboard.nextLine();
 
+                if (decision.equalsIgnoreCase("medicine one")) {
+                    System.out.println("\n This pill turned out to be a painkiller. " +
+                            "You don't suffer as much but you unfortunately die. :(");
+                } else if (decision.equalsIgnoreCase("medicine two")) {
+                    System.out.println("\n You survived with this pill. Great choice!");
+                }
             }
 
         }
