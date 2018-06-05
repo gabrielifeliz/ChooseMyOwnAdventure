@@ -42,11 +42,13 @@ public class ChooseMyOwnAdventure {
             } else if (decision.equalsIgnoreCase("bathroom")) {
                 System.out.println("\nIt is difficult to get in but you put effort strength to open the door.\n" +
                         "When you were finally inside the bathroom, the door closed and you got locked in.\n" +
-                        "You find ways to get out of the bathroom");
+                        "In the bathtub, you see a saw and a nail polish remover.\n" +
+                        "You thinking you can use one of these items to open the bathroom's door. \n" +
+                        "Would you choose the \"saw\" or the \"nail polish remover\" to find a way out of the bathroom?");
                 System.out.print("> "); decision = keyboard.nextLine();
                 if (decision.equalsIgnoreCase("saw")) {
                     System.out.println("\nThe saw turns out to be made out of plastic..." +
-                            "As a result, it broke as you were putting pressure on it.\n" +
+                            "As a result, it broke as you tried to create an opening on the door.\n" +
                             "Because you're trapped, you will not continue in the adventure.\n" +
                             "Come back to play next time!");
 
